@@ -1,0 +1,78 @@
+:root {
+    --main-color: #003366;
+    --secondary-color: #0055aa;
+    --text-color: #222222;
+    --background-color: #f5f7fa;
+}
+
+.reveal {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.reveal .slides {
+    text-align: left;
+}
+
+.reveal h1 {
+    color: var(--main-color);
+    text-align: center;
+}
+
+.reveal h2 {
+    color: var(--main-color);
+}
+
+.reveal p,
+.reveal li {
+    font-size: 26px;
+}
+
+.reveal img {
+    max-height: 450px;
+    border-radius: 10px;
+}
+
+.reveal .slide-number {
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.reveal .progress {
+    color: var(--secondary-color);
+}
+
+#inputArea {
+    margin-top: 20px;
+}
+
+#inputArea input {
+    width: 80px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#inputArea label {
+    margin-right: 5px;
+}
+
+#result {
+    margin-top: 15px;
+    padding: 15px;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    background: #f0f4f8;
+    min-height: 50px;
+}
+
+select {
+    padding: 8px;
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+}

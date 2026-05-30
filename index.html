@@ -1,40 +1,77 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!DOCTYPE html>
+<html lang="ru">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аналитическая геометрия</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="css/theme.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Слайд 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <link rel="stylesheet"
+          href="reveal.js/plugin/highlight/monokai.css">
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <link rel="stylesheet"
+          href="reveal.js/plugin/menu/menu.css">
+</head>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+
+        <section
+            data-markdown="slides.md"
+            data-separator="^\r?\n---\r?\n$"
+            data-separator-vertical="^\r?\n--\r?\n$">
+        </section>
+
+    </div>
+</div>
+
+<script src="reveal.js/dist/reveal.js"></script>
+
+<script src="reveal.js/plugin/markdown/markdown.js"></script>
+<script src="reveal.js/plugin/highlight/highlight.js"></script>
+<script src="reveal.js/plugin/notes/notes.js"></script>
+<script src="reveal.js/plugin/menu/menu.js"></script>
+
+<script src="js/converters.js"></script>
+
+<script>
+
+Reveal.initialize({
+
+    hash: true,
+
+    controls: true,
+
+    progress: true,
+
+    slideNumber: true,
+
+    center: true,
+
+    transition: 'slide',
+
+    menu: {
+        side: 'left',
+        width: '300px',
+        numbers: true,
+        titleSelector: 'h1, h2',
+        useTextContentForMissingTitles: true
+    },
+
+    plugins: [
+        RevealMarkdown,
+        RevealHighlight,
+        RevealNotes,
+        RevealMenu
+    ]
+});
+
+</script>
+
+</body>
 </html>
