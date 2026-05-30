@@ -1,6 +1,12 @@
-window.onload = function () {
-    changeForm();
-};
+document.addEventListener("reveal.js.ready", () => {
+
+    setTimeout(() => {
+        if (document.getElementById("conversionType")) {
+            changeForm();
+        }
+    }, 500);
+
+});
 
 function changeForm() {
 
