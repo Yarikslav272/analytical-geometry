@@ -7,7 +7,6 @@ vendor/
 config/local.php
 
 # Результаты сборки
-// dist/
 build/
 
 # Системные файлы
