@@ -1,6 +1,4 @@
-window.onload = function () {
-    changeForm();
-};
+window.onload = function () {};
 
 function changeForm() {
 
